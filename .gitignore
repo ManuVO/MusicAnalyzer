@@ -1,30 +1,25 @@
 # ================================================
-# Entornos virtuales y dependencias de Python
+# Entorno virtual y dependencias de Python
 # ================================================
 venv/
 .venv/
 env/
-ENV/
 pythonenv/
 
 # Archivos de caché de Python
 __pycache__/
 *.py[cod]
-*.pyd
 *.pyo
+*.pyd
 *.egg-info/
 .pytest_cache/
 
 # ================================================
-# Archivos de entorno y sensibles
+# Datos y artefactos de modelos (NO versionar)
 # ================================================
-.env
-.env.local
-.env.development
-.env.production
-secrets.yml
-*.key
-*.cert
+data/raw/           # Audio original (archivos grandes)
+data/processed/     # Espectrogramas/features preprocesados
+artifacts/          # Modelos entrenados, logs, gráficos
 
 # ================================================
 # Configuración de IDEs y editores
@@ -33,45 +28,40 @@ secrets.yml
 .vscode/
 *.code-workspace
 
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
 # PyCharm
 .idea/
 *.iml
 
-# Otros
-.history/
-*.swp
-*.swo
+# ================================================
+# Archivos sensibles y de entorno
+# ================================================
+.env
+.env.local
+.env.production
+secrets.yml
+*.key
+*.cert
 
 # ================================================
-# Testing y coverage
+# Logs, bases de datos y archivos temporales
 # ================================================
-.coverage
-htmlcov/
-.coverage.*
-.pytest_cache/
-test-reports/
+*.log
+*.sqlite
+*.db
+*.tmp
+*.temp
 
 # ================================================
 # Builds y distribuciones
 # ================================================
 build/
 dist/
-*.egg-info/
 *.whl
 *.tar.gz
-
-# ================================================
-# Jupyter Notebooks
-# ================================================
-.ipynb_checkpoints/
-*.ipynb
-
-# ================================================
-# Logs y bases de datos locales
-# ================================================
-*.log
-*.sqlite
-*.db
 
 # ================================================
 # Sistema operativo
@@ -84,7 +74,8 @@ Thumbs.db
 ehthumbs_vista.db
 
 # ================================================
-# Archivos temporales personalizados
+# Testing
 # ================================================
-*.tmp
-*.temp
+.coverage
+htmlcov/
+test-reports/
