@@ -1,0 +1,90 @@
+# ================================================
+# Entornos virtuales y dependencias de Python
+# ================================================
+venv/
+.venv/
+env/
+ENV/
+pythonenv/
+
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# ================================================
+# Archivos de entorno y sensibles
+# ================================================
+.env
+.env.local
+.env.development
+.env.production
+secrets.yml
+*.key
+*.cert
+
+# ================================================
+# Configuración de IDEs y editores
+# ================================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# PyCharm
+.idea/
+*.iml
+
+# Otros
+.history/
+*.swp
+*.swo
+
+# ================================================
+# Testing y coverage
+# ================================================
+.coverage
+htmlcov/
+.coverage.*
+.pytest_cache/
+test-reports/
+
+# ================================================
+# Builds y distribuciones
+# ================================================
+build/
+dist/
+*.egg-info/
+*.whl
+*.tar.gz
+
+# ================================================
+# Jupyter Notebooks
+# ================================================
+.ipynb_checkpoints/
+*.ipynb
+
+# ================================================
+# Logs y bases de datos locales
+# ================================================
+*.log
+*.sqlite
+*.db
+
+# ================================================
+# Sistema operativo
+# ================================================
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs_vista.db
+
+# ================================================
+# Archivos temporales personalizados
+# ================================================
+*.tmp
+*.temp
