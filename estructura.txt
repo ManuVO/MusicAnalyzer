@@ -1,0 +1,34 @@
+MusicAnalyzer/
+├── .gitignore
+├── README.md
+├── requirements.txt
+├── config/               # [NUEVO] Configuraciones del proyecto
+│   └── params.yaml       # Hiperparámetros, rutas, etc.
+├── data/
+│   ├── raw/              # Audios originales (sin procesar)
+│   ├── processed/        # Características extraídas (MFCCs, espectrogramas)
+│   ├── external/         # [NUEVO] Datos de terceros (ej: datasets públicos)
+│   └── references/       # [NUEVO] Documentación sobre los datos (metadata, licencias)
+├── artifacts/            # [NUEVO] Salidas del modelo (checkpoints, gráficos, logs)
+├── notebooks/
+│   ├── exploration.ipynb # Análisis exploratorio
+│   └── experiments.ipynb # Pruebas de modelos
+├── src/
+│   ├── models/
+│   │   ├── architectures.py  # Definición de redes neuronales
+│   │   └── train.py          # Lógica de entrenamiento
+│   ├── preprocessing/
+│   │   ├── feature_extractor.py  # Extracción de MFCCs, etc.
+│   │   └── data_augmentation.py  # Aumentación de datos (ej: añadir ruido)
+│   ├── evaluation/
+│   │   └── metrics.py       # [NUEVO] Cálculo de métricas (accuracy, F1-score)
+│   ├── utils/
+│   │   ├── logger.py        # [NUEVO] Sistema de logging
+│   │   └── helpers.py       # Funciones auxiliares
+│   └── main.py              # Punto de entrada del programa
+├── scripts/                 # [NUEVO] Comandos útiles (ej: entrenar, predecir)
+│   ├── train_model.sh
+│   └── predict.sh
+├── tests/                   # Tests unitarios y de integración
+│   ├── test_preprocessing.py
+│   └── test_models.py
